@@ -1,0 +1,15 @@
+.progress-weak {
+  background-color: #ff0000;
+}
+
+.progress-fair {
+  background-color: #ffa500;
+}
+
+.progress-good {
+  background-color: #ffd700;
+}
+
+.progress-strong {
+  background-color: #008000;
+}
