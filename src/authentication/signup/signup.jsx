@@ -132,41 +132,31 @@ export default function SignUp() {
 
   return (
     <>
-      <div className=" bg-slate-100 overflow-hidden">
+      <div className=" bg-slate-100 ">
         <Navbar />
-        <div className="flex flex-row items-center my-auto justify-center align-middle pt-10 h-screen ">
+        <div className="flex md:flex-row flex-col items-center my-auto justify-center align-middle pt-10 h-screen ">
           <div
-            className="  w-96 rounded shadow-md"
+            className=" md:w-96 w-screen md:mt-0 mt-44 rounded shadow-md p-9"
             style={{
               background: `url(${loginBackground})`,
               backgroundSize: "cover",
             }}
           >
-            <img src={helloIcon} className="w-72 h-86 m-auto mt-20 "></img>
-            <h1 className="text-center mt-11 font-bold text-blue-200 text-xl">Welcome to the website</h1>
+            <div className="animate-bounce ">
+              <img
+                src={helloIcon}
+                className="md:w-96 md:h-64 h-32 m-auto mt-10 md:mt-20 "
+              ></img>
+            </div>
+            <h1 className="text-center md:mt-0 font-bold text-blue-200 text-xl">
+              Welcome to the website
+            </h1>
             <p className="text-center mt-4 mb-8 p-2 text-white">
-              Thank you for joining our community. We &apos; re excited to have you on
-              board and explore all that our website has to offer.
+              Thank you for joining our community. We &apos; re excited to have
+              you on board and explore all that our website has to offer.
             </p>
-
-            {/* <div className="text-center">
-              <h2>What You'll Find Here:</h2>
-              <p>
-                🌐 <strong>Discover:</strong> Explore a diverse range of content
-                and information tailored just for you.
-              </p>
-              <p>
-                🚀 <strong>Engage:</strong> Connect with like-minded
-                individuals, share your thoughts, and be part of the
-                conversation.
-              </p>
-              <p>
-                🎉 <strong>Exclusive Features:</strong> Unlock special features
-                and benefits by becoming a member. Sign up today to get started!
-              </p>
-            </div> */}
           </div>
-          <div className="bg-white p-7 rounded shadow-md">
+          <div className="bg-white p-7 w-screen md:w-auto rounded shadow-md">
             <h2 className="text-2xl font-semibold mb-4">Register</h2>
             <form action="{{ url_for('auth_login') }}" method="post">
               <div className="mb-4">

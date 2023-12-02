@@ -42,19 +42,21 @@ export default function Login() {
   return (
     <div className=" bg-slate-100">
       <Navbar />
-      <div className="flex flex-row items-center h-screen my-auto justify-center">
+      <div className="flex md:flex-row flex-col items-center  h-screen md:my-auto justify-center">
         <div
-          className="text-white p-8 rounded shadow-md w-96 h-96 flex flex-col justify-center align-middle text-center"
+          className="text-white p-20 rounded md:mt-0 mt-6 shadow-md md:w-96 w-screen  md:h-96 h-96 flex flex-col justify-center align-middle text-center"
           style={{
             background: `url(${loginBackground})`,
             backgroundSize: "cover",
           }}
         >
-          <img src={helloIcon} className="w-72 m-auto"></img>
+          <div className="animate-bounce">
+            <img src={helloIcon} className="w-72 m-auto"></img>
+          </div>
           <p className="font-semibold">Nice to see you again</p>
           <h1 className="font-bold text-3xl text-blue-400">Welcome back</h1>
         </div>
-        <div className="bg-white p-8 rounded shadow-md w-96 h-96">
+        <div className="bg-white p-8 rounded shadow-md md:w-96 w-screen h-96">
           <h2 className=" mb-4 font-bold text-2xl text-blue-900">Login</h2>
           <form action="" method="post" onSubmit={(e) => handleSubmit(e)}>
             <div className="mb-4">
