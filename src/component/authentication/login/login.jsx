@@ -1,8 +1,8 @@
 import "./login.css";
-import showIcon from "../../assets/eye.svg";
-import hideIcon from "../../assets/eye-hide.svg";
-import helloIcon from "../../assets/hello.jpg";
-import loginBackground from "../../assets/login.jpg";
+import showIcon from "../../../assets/eye.svg";
+import hideIcon from "../../../assets/eye-hide.svg";
+import helloIcon from "../../../assets/hello.jpg";
+import loginBackground from "../../../assets/login.jpg";
 import Navbar from "../../utils/navbar/navbarAuth";
 import { useState } from "react";
 export default function Login() {

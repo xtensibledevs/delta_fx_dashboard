@@ -10,14 +10,17 @@ export default function Navbar(props) {
   };
 
   return (
-    <nav className="bg-blue-700 p-4 fixed w-screen z-50">
+    <nav className="bg-blue-700 p-4 px-10 fixed w-screen z-50">
       <div className="container mx-auto flex flex-col md:flex-row justify-between  items-center">
         <Link className="text-white text-xl flex justify-between md:items-center md:w-80 w-full px-5 md:px-0 ">
           <i
-            className="fas fa-triangle my-auto"
+            className="fas fa-triangle my-auto cursor-pointer"
             onClick={() => navigate("/")}
           ></i>
-          <h1 className="text-center  my-auto hidden md:flex ">
+          <h1
+            className="text-center  my-auto hidden md:flex cursor-pointer"
+            onClick={() => navigate("/")}
+          >
             Delta Functions | Xtensible Devs
           </h1>
           <div className="md:hidden ">
@@ -60,7 +63,7 @@ export default function Navbar(props) {
                 Contact
               </Link>
             </li>
-            <li>
+            <li className="cursor-pointer">
               <a
                 onClick={() => navigate("/login")}
                 className="ml-0 md:ml-8 p-2 rounded text-black font-semibold bg-white hover:bg-opacity-75 transition-colors"
@@ -68,7 +71,7 @@ export default function Navbar(props) {
                 Login
               </a>
             </li>
-            <li>
+            <li className="cursor-pointer">
               <a
                 onClick={() => navigate("/signup")}
                 className="p-2 rounded text-black font-semibold bg-white hover:bg-opacity-75 transition-colors"

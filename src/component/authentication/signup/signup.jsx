@@ -1,10 +1,10 @@
 import zxcvbn from "zxcvbn";
 import "./signup.css";
 import Navbar from "../../utils/navbar/navbarAuth";
-import showIcon from "../../assets/eye.svg";
-import loginBackground from "../../assets/login.jpg";
-import hideIcon from "../../assets/eye-hide.svg";
-import helloIcon from "../../assets/hello.jpg";
+import showIcon from "../../../assets/eye.svg";
+import loginBackground from "../../../assets/login.jpg";
+import hideIcon from "../../../assets/eye-hide.svg";
+import helloIcon from "../../../assets/hello.jpg";
 
 import { useState } from "react";
 export default function SignUp() {
